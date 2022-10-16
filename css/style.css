@@ -4019,7 +4019,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem !important;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4176,8 +4176,8 @@ input[type="button"].btn-block {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
   content: "";
   background: no-repeat center center;
@@ -4185,6 +4185,9 @@ input[type="button"].btn-block {
 }
 
 @media (max-width: 575.98px) {
+  .navbar{
+    padding: 0px !important;
+  }
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     padding-right: 0;
@@ -9915,7 +9918,7 @@ h6,
 }
 
 .testimonial-carousel .owl-dot.active {
-  width: 40px;
+  width: 30px;
   background: #21c79b;
 }
 
@@ -10050,7 +10053,7 @@ p {
 
   .owl-carousel {
     display: flex !important;  
-    flex-direction: row;   
+    flex-direction: column;   
     justify-content: center;  
 }
 
@@ -10168,17 +10171,76 @@ i {
 	bottom: 0;
     left: -25px;
 }
-
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.header-section{
+  height: 92vh;
+  background-image: linear-gradient(rgb(255 255 255 / 50%), rgb(25 46 6 / 50%));
+}
+.header-section-image{
+  display: none;
+}
+@media(max-width: 575px) {
+  .header-image{
+    display: none;
+  }
+  .header-section{
+    display: flex !important;
+    text-align: justify !important;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    color: black;
+  }
+  .header-title{
+    letter-spacing: 0.8px !important;
+    padding-bottom: 14px;
+    z-index: 1;
+    color: black;
+  }
+  .header-section-image{
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 50vh;
+    opacity: 0.1;
+  }
+  .section-content{
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .section-content-title{
+    position: absolute;
+    bottom: 0%;
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  }
+  .section-content-title > div{
+    margin-bottom: 0 !important;
+    position: absolute;
+    bottom: 0%;
+  }
+  .section-content-title > div > p{
+    color: white;
+  }
+  .text-xs{
+    font-size: 12px;
+  }
+  .custom-list{
+    padding-left: 120px;
+  }
+  .owl-carousel{
+    flex-direction: column !important;
+  }
+}
+.section-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.custom-border{
+  border-bottom: 1px dashed #bdbcbc;
+  padding: 20px;
+}
+.custom-list{
+  overflow: auto;
 }
