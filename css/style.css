@@ -7476,6 +7476,7 @@ button.bg-dark:focus {
     position: sticky;
     top: 0;
     z-index: 1020;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   }
 }
 
