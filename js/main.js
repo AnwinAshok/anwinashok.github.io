@@ -120,4 +120,21 @@ $("#nav a[href^='#']").on('click', function(e) {
       });
  
  });
+
+ $(document).scroll(function() {
+    if($(window).scrollTop() > 50){
+
+     $(".navbar").css("background","rgba( 0, 0, 0, 0.25 ) ");
+     
+     $("#header").hide();
+     $("#header2").show();
+
+    }else if($(window).scrollTop() < 50){
+
+     $(".navbar").css("background","rgb(53 177 144 / 36%)");
+     $("#header2").hide();
+     $("#header").show();
+
+    }
+});
  

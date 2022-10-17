@@ -4107,6 +4107,8 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background: rgb(53 177 144 / 36%);
+    backdrop-filter: blur( 12px );
 }
 
 .navbar .container,
@@ -7479,7 +7481,6 @@ button.bg-dark:focus {
     position: sticky;
     top: 0;
     z-index: 1020;
-    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   }
 }
 
@@ -10173,8 +10174,8 @@ i {
     left: -25px;
 }
 .header-section{
-  height: 92vh;
-  background-image: linear-gradient(rgb(255 255 255 / 50%), rgb(25 46 6 / 50%));
+  height: 100vh;
+  background-image: linear-gradient(rgb(163 231 215), rgb(179 162 128));
 }
 .header-section-image{
   display: none;
