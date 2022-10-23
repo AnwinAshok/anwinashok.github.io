@@ -29,10 +29,10 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="min-height: 96px; background-color: rgb(163 230 214);">
         <a href="index.html" class="navbar-brand text-secondary">
-            <img src="img/logo.png" alt=" Business Solutions" height="70">
-            <img src="img/name.png" alt=" Business Solutions" height="70" width="250">
+            <img id="logoImage" src="img/logo.png" alt=" Business Solutions" height="70" style="display: none;">
+            <img id="nameImage" src="img/name.png" alt=" Business Solutions" height="70" width="250" style="display: none;">
         </a>
         <button size="sm" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,8 @@
         <div class="row mx-0 align-items-center">
             <div class="col-lg-6 px-md-5 text-center text-lg-left position-relative">
                 <img class="img-fluid mt-5 mt-lg-0 header-section-image" src="img/header.png" alt="">
-                <h1 class="display-3 text-uppercase mb-3 header-title">Leading HVAC Engineering Solutions</h1>
+                <img src="img/logo.png" id="mainLogo" alt=" Business Solutions" height="120" style="padding-left: 1;">
+                <h1 class="display-2 text-uppercase mb-3 header-title animate-charcter">Arcadians Engineering Solutions</h1>
                 <p class="text-dark mb-4 header-content">We at Arcadians Solutions uses expert knowledge to respond to the needs of businesses looking for
                     digitalized and eco-conscious HVAC solutions. We are the partner your business needs, integrating
                     our technology into your day-to-day operations and supporting you and your business every step of

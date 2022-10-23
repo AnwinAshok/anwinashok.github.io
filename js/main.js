@@ -130,18 +130,21 @@ $("#nav a[href^='#']").on('click', function(e) {
  });
 
  $(document).scroll(function() {
-    if($(window).scrollTop() > 50){
+    if($(window).scrollTop() > 350){
 
      $(".navbar").css("background","rgba( 0, 0, 0, 0.25 ) ");
-     
-     $("#header").hide();
-     $("#header2").show();
+     $("#nameImage").fadeIn('slow');
+     $("#logoImage").fadeIn('slow');
+     $("#header").fadeOut();
+     $("#header2").fadeIn();
 
-    }else if($(window).scrollTop() < 50){
+    }else if($(window).scrollTop() < 350){
 
-     $(".navbar").css("background","rgb(53 177 144 / 36%)");
-     $("#header2").hide();
-     $("#header").show();
+     $(".navbar").css("background","rgb(163 230 214)");
+     $("#header2").fadeOut();
+     $("#header").fadeIn();
+     $("#nameImage").fadeOut('slow');
+     $("#logoImage").fadeOut('slow');
 
     }
 });
