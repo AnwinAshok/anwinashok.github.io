@@ -132,6 +132,7 @@ $("#nav a[href^='#']").on('click', function(e) {
  $(document).scroll(function() {
     if($(window).scrollTop() > 350){
 
+    $(".navbar").css('transition', 'background 1s ease-in-out');
      $(".navbar").css("background","rgba( 0, 0, 0, 0.25 ) ");
      $("#nameImage").fadeIn('slow');
      $("#logoImage").fadeIn('slow');
@@ -139,7 +140,7 @@ $("#nav a[href^='#']").on('click', function(e) {
      $("#header2").fadeIn();
 
     }else if($(window).scrollTop() < 350){
-
+        $(".navbar").css('transition', 'background 1s ease-in-out');
      $(".navbar").css("background","rgb(163 230 214)");
      $("#header2").fadeOut();
      $("#header").fadeIn();
