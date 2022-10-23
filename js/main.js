@@ -17,6 +17,14 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
+
+    $('#sendMessageButton').click(function() {
+        var email = $('#email').val();
+        var subject = "Enquiry From Website | " + $('#subject').val();
+        var message = $('#message').val();
+        var href = "mailto:info@arcadianssolutions.in?from=" + email + "&subject=" + subject + "&body=" + message;
+        $(this).attr("href", href); 
+    });
     
     
     // Back to top button
