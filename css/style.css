@@ -10267,3 +10267,9 @@ i {
     background-position: 200% center;
   }
 }
+
+figcaption {
+  padding-top: 6px;
+  text-align: center;
+  padding-bottom: 8px;
+}
