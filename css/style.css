@@ -56,7 +56,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #686A6F;
@@ -413,7 +413,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .lead {
@@ -10000,7 +10000,7 @@ h3 {
 }
 p {
   color: #575a7b;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
 }
@@ -10272,4 +10272,8 @@ figcaption {
   padding-top: 6px;
   text-align: center;
   padding-bottom: 8px;
+}
+.para{
+padding-top:0 !important;
+padding: 10%;
 }
